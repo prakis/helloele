@@ -1,3 +1,6 @@
+/*
+ * The DEFAULT_PASSWORD in the constant are dummy passwords only for the experimental purpose.
+ */
 module.exports = {
 
 ACCESS_KEY: 'access_key',
