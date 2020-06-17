@@ -17,9 +17,12 @@ For development, you will only need Node.js and a node global package, npm insta
 
 ### Usage & Configuration
 - #### installation 
-  You can install ele by running 
+  To install ele run
       $ sudo npm install -g helloele
 	  
+  To uninstall ele run
+      $ sudo npm uninstall -g helloele
+
 - #### create-group 
   To use ele you first need to create a group and provide your AWS S3 storage credentials (these credentails are stored in your computer never sent to helloeele server). 
       $ ele create-group avengers-group
