@@ -1,8 +1,11 @@
 {
-  "name": "ele",
+  "name": "helloele",
   "version": "0.1.1",
   "description": "Simple file copy for devs",
   "main": "ele.js",
+  "bin": {
+    "ele": "ele.js"
+  },
   "scripts": {
     "test": "test"
   },
