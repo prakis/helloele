@@ -24,7 +24,7 @@ class Upload extends BaseCommand {
     action() {
 
         let epoch_time = (new Date()) / 1000;
-        let local_file_path = utils.check_file_limits(this.getArgsValue(CLI_KEY_FILE_NAME))
+        let local_file_path = utils.check_file_exists(this.getArgsValue(CLI_KEY_FILE_NAME))
         if (local_file_path) {
             const bucket_name = utils.get_config_value(BUCKET_NAME)
             const group_name = utils.get_config_value(GROUP_NAME)

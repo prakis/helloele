@@ -42,8 +42,7 @@ class CreateGroup extends BaseCommand {
         let s3_access_key = readlineSync.question(' \nPlease enter s3 access key: ');
         let s3_secret_access_key = readlineSync.question(' \nPlease enter s3 secret access key: ');
         let s3_bucket_name = readlineSync.question(' \nPlease enter s3 bucket name: ');
-        let max_file_size = readlineSync.question(' \nDo you want to limit the maximum size for user to upload(MB)?: ');
-        let file_data = "[" + CONSTANTS.DEFAULT + "]" + "\n" + CONSTANTS.ACCESS_KEY + "=" + s3_access_key + "\n" + CONSTANTS.SECRET_ACCESS_KEY + "=" + s3_secret_access_key + "\n" + CONSTANTS.BUCKET_NAME + "=" + s3_bucket_name + "\n" + CONSTANTS.S3_SERVER_ENDPOINT + "=" + s3_storage_type + "\n" + CONSTANTS.MAX_FILE_SIZE + "=" + max_file_size + "\n" + CONSTANTS.PUBLIC_SHARED_FOLDER + "=public" + "\n";
+        let file_data = "[" + CONSTANTS.DEFAULT + "]" + "\n" + CONSTANTS.ACCESS_KEY + "=" + s3_access_key + "\n" + CONSTANTS.SECRET_ACCESS_KEY + "=" + s3_secret_access_key + "\n" + CONSTANTS.BUCKET_NAME + "=" + s3_bucket_name + "\n" + CONSTANTS.S3_SERVER_ENDPOINT + "=" + s3_storage_type + "\n" + CONSTANTS.PUBLIC_SHARED_FOLDER + "=public" + "\n";
         fs.writeFileSync(CONSTANTS.CONFIG_FILE, file_data, CONSTANTS.UTF_8);
         return CONSTANTS.CONFIG_FILE;
 

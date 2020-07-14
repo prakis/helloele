@@ -19,21 +19,17 @@ var iv = Buffer.from('26ae5cc854e36b6bdfca366848dea6bb', 'hex');
  * @param {*} local_file_path
  * @returns
  */
-function check_file_limits(local_file_path) {
+function check_file_exists(local_file_path) {
     if (null == local_file_path) {
         console.log("Please enter file name")
         return null;
     }
-    if (false == is_file_exists(local_file_path)) {
+    if (true == is_file_exists(local_file_path)) {
+        return local_file_path
+    } else {
         console.log("File doesn't exist")
         return null;
     }
-    let max_size = Number(get_config_value(CONSTANTS.MAX_FILE_SIZE))
-    if (is_file_size_in_limits(local_file_path, max_size)) {
-        return local_file_path
-    }
-    console.log("File size is beyond max size", max_size);
-    return null;
 }
 /**
  *
@@ -295,7 +291,7 @@ module.exports = {
     get_file_size_in_mb,
     is_file_exists,
     retrive_file_name_only,
-    check_file_limits,
+    check_file_exists,
 
     get_config,
     get_config_value,
