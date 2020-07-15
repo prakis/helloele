@@ -3,7 +3,7 @@
 A simple file copy tool from command prompt(terminal) using file-index **No more copy pasting or remembering long file urls**.
 You can upload download files with commands like.
 
-You can also find this doc on https://helloele.com/howto
+You can also find this doc on https://helloele.com/
 
 	$ ele upload project-abc-version123.txt
 This will return a file-number example :  421  .  To download this file using file-number
