@@ -1,6 +1,6 @@
 {
   "name": "helloele",
-  "version": "0.1.4",
+  "version": "0.1.5",
   "description": "Simple file copy for devs",
   "main": "ele.js",
   "bin": {
