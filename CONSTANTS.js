@@ -20,7 +20,7 @@ CONFIG_FILE : "config.ini",
 CONFIG_FILE_ENCRYPTED : "group-config-encrypted.ini",
 ALGORITHM : 'aes-256-ctr',
 UTF_8 : 'utf-8',
-DEFAULT_PASSWORD : "DB665D4B997E11A68970A2234683E7",
+DEFAULT_PASSWORD : "dummy-password",
 DEFAULT_PASSWORD_1 : "ele-default-dummy-password-123",
 
 CLI_KEY_FILE_NAME : 'fileName',
