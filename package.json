@@ -21,7 +21,7 @@
   "homepage": "https://helloele.com",
   "dependencies": {
     "aws-sdk": "^2.679.0",
-    "axios": "^0.19.2",
+    "axios": "^0.31.1",
     "caporal": "prakis/Caporal.js",
     "chalk": "^4.0.0",
     "ini": "^1.3.5",
